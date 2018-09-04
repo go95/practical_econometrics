@@ -23,4 +23,4 @@ swirl()
 
 ## Acknowledgments
 
-Some of the Home Assignments are borrowed from the John Hopkins Univerity course in Data Science from Coursera. We thank Roger D. Peng et al. for distributing their Home Assignments under permissive licence.
+Some of the Home Assignments are borrowed from John Hopkins Univerity course in Data Science from Coursera. We thank Roger D. Peng et al. for distributing their Home Assignments under permissive licence.
