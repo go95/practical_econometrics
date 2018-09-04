@@ -1,4 +1,4 @@
-# practical_econometrics
+# Прикладная эконометрика
 
 Привет. Это репозиторий курса "Прикладная эконометрика" на экономическом факультете МГУ. Здесь будут выкладываться некоторые домашние задания.
 
@@ -23,4 +23,4 @@ swirl()
 
 ## Acknowledgments
 
-Some of the Home Assignments are borrowed from the John Hopkins univerity course in Data Analysis from Coursera. We thank Roger D. Peng et al. for distributing their Home Assignments under permissive licence.
+Some of the Home Assignments are borrowed from the John Hopkins Univerity course in Data Science from Coursera. We thank Roger D. Peng et al. for distributing their Home Assignments under permissive licence.
