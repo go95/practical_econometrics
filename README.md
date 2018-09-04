@@ -6,8 +6,6 @@
 
 1. Установите последнюю версию R на свою операционную систему по [ссылке](https://cran.rstudio.com)
 
-If you need to install R, you can do so here.
-
 2. Скачайте RStidio Open Source Edition по [ссылке](https://www.rstudio.com/products/RStudio)
 
 3. Выполните следующие команды в RStudio
