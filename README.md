@@ -54,7 +54,7 @@ swirl()
 1.Скачайте данные с публикациями Atila Abdulkadiroglu из Duke University c помощью команды
 
 ```R
-
+articles <- read.csv(url("https://raw.githubusercontent.com/go95/practical_econometrics/master/Abdulkadiroglou.csv"))
 ```
 
 2. Посчитайте Индекс Хирша для Atila Abdulkadiroglu
