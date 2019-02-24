@@ -51,6 +51,12 @@ swirl()
 
 Это первая часть длинного проекта, на основе которого мы будем учиться писать чистый код и использовать функции в R
 
+0. Вам понадобится установить пакет
+
+```
+install.packages('lintr')
+```
+
 1.Скачайте данные с публикациями Atila Abdulkadiroglu из Duke University c помощью команды
 
 ```R
@@ -64,7 +70,7 @@ articles <- read.csv(url("https://raw.githubusercontent.com/go95/practical_econo
 Ваш код должен иметь формат .R, должен проходить проверку на Tidyverse Style Guide. Вы можете это проверить с помощью команды:
 
 ```R
-library(lintr)
+library(lintr) # импорт (активация) пакета
 lint("your_file.R")
 ```
 
