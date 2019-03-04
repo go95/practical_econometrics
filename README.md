@@ -97,13 +97,13 @@ install.packages('scholar')
 1. Скачайте список Google Scholar ID исследуемых исследователей (вполне уместный каламбур).
 
 ```R
-articles <- read.csv(url("https://raw.githubusercontent.com/go95/practical_econometrics/master/google_scholar_ids.csv"), as.is = TRUE)
+scholars <- read.csv(url("https://raw.githubusercontent.com/go95/practical_econometrics/master/google_scholar_ids.csv"), as.is = TRUE)
 ```
 
 2. Воспольуйтесь функциями get_publications и get_profile из пакета scholar, чтобы собрать data.frame с полями author1, author2, university1, university2 year, n_joint_publications.
 
 ```R
-get_bibliographical_data <- function() {
+get_bibliographical_data <- function (scholars) {
   # YOUR CODE HERE
   return(data)
 }
@@ -117,7 +117,7 @@ get_bibliographical_data <- function() {
 
 ```R
 source('your_file.R')
-x <- get_bibliographical_data()
+x <- get_bibliographical_data(scholars)
 ```
 
 Результатом выполнения этих команд должен быть исходный data.frame, присвоенный переменной x
