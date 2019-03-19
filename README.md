@@ -157,7 +157,8 @@ lint("ha4_with_hints.R")
 
 Задавайте вопросы, обсуждайте в чатике
 
-3. Получите список публикаций функцией get_publications_author_pair и, воспользовавшись пакетом dplyr сделайте табличку author1 author2 n_joint_publications year
+3. Получите список публикаций функцией get_publications_author_pair и, воспользовавшись пакетом dplyr,
+  сделайте табличку author1 author2 n_joint_publications year
 
 4. Получите список университетов функцией get_affiliation_info
 
