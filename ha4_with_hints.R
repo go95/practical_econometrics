@@ -6,11 +6,11 @@ scholars <- read.csv(url(paste0("https://raw.githubusercontent.com/",
   "go95/practical_econometrics/master/google_scholar_ids.csv")), as.is = TRUE)$ids[1:20]
 
 get_publications_author_pair <- function(scholars) {
-  # This function takes the list of scholar ids and created a dataframe with
+  # This function takes the list of scholar ids and creates a dataframe with
   # columns:
   #   author1 author2 pub_id and other publications info
   # unit of observation:
-  #   publication with an author pair
+  #   author pair (with the first author from scholars vector and their joint publication 
   
   publications <- data.frame()
   for (scholar in scholars) {
