@@ -153,9 +153,6 @@ lint("ha4_with_hints.R")
 ```
 
 Воспользуйтесь пакетом pbapply, чтобы заменить печать scholar_ids в функции get_publications_author_pair на Progress bar.
-```R
-lint("ha4_with_hints.R")
-```
 
 Задавайте вопросы, обсуждайте в чатике
 
