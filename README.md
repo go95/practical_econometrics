@@ -145,7 +145,7 @@ source("ha4_with_hints.R")
 source(url("https://raw.githubusercontent.com/go95/practical_econometrics/master/ha4_with_hints.R"))
 ```
 
-2. Почитайте код и разберитесь в нем. Обратите внимание, а заодно (этот пункт оценивается
+2. Почитайте код и разберитесь в нем, а заодно:
 
 Проверьте его на следование Style guide и исправьте ошибки
 ```R
@@ -157,7 +157,7 @@ lint("ha4_with_hints.R")
 lint("ha4_with_hints.R")
 ```
 
-Здавайте вопросы, обсуждайте в чатике
+Задавайте вопросы, обсуждайте в чатике
 
 3. Получите список публикаций функцией get_publications_author_pair и, воспользовавшись пакетом dplyr сделайте табличку author1 author2 n_joint_publications year
 
