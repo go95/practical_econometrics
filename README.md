@@ -138,7 +138,8 @@ install.packages('dplyr')
 1. Cкачайте файл и выполните с помощью source
 
 ```R
-download.file("https://raw.githubusercontent.com/go95/practical_econometrics/master/ha4_with_hints.R", destfile = "ha4_with_hints.R")
+download.file("https://raw.githubusercontent.com/go95/practical_econometrics/master/ha4_with_hints.R",
+  destfile = "ha4_with_hints.R")
 source("ha4_with_hints.R")
 
 # кстати вот так тоже работает, но файл не создается в рабочей директории
