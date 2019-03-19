@@ -124,6 +124,62 @@ x <- get_bibliographical_data(scholars)
 
 3. Сдать код: https://goo.gl/forms/d8XBky4t45wvHzen2
 
+## Четвертое домашнее задание, облегченное (срок: 23:59 25 марта) (10 баллов)
+
+В репозитории лежит та часть домашнего задания, которую мы сделали на семинаре. Он определяет функции get_publications_author_pair, get_affiliation_info, format_name, а также скачивает список исследуемых scholars. Документация по этим функциям содержатся непосредственно в коде. Этот код берет сырые данные по публикациям и делает из них промежуточные таблицы. Нам осталась самая простая часть -- сгруппировать эти данные и собрать в один датсет.
+
+0. Вам понадобится установить пакеты
+
+```R
+install.packages('pbapply')
+install.packages('dplyr')
+```
+
+1. Cкачайте файл и выполните с помощью source
+
+```R
+download.file("https://raw.githubusercontent.com/go95/practical_econometrics/master/ha4_with_hints.R", destfile = "ha4_with_hints.R")
+source("ha4_with_hints.R")
+
+# кстати вот так тоже работает, но файл не создается в рабочей директории
+source(url("https://raw.githubusercontent.com/go95/practical_econometrics/master/ha4_with_hints.R"))
+```
+
+2. Почитайте код и разберитесь в нем. Обратите внимание, а заодно (этот пункт оценивается
+
+Проверьте его на следование Style guide и исправьте ошибки
+```R
+lint("ha4_with_hints.R")
+```
+
+Воспользуйтесь пакетом pbapply, чтобы заменить печать scholar_ids в функции get_publications_author_pair на Progress bar.
+```R
+lint("ha4_with_hints.R")
+```
+
+Здавайте вопросы, обсуждайте в чатике
+
+3. Получите список публикаций функцией get_publications_author_pair и, воспользовавшись пакетом dplyr сделайте табличку author1 author2 n_joint_publications year
+
+4. Получите список университетов функцией get_affiliation_info
+
+5. Приведите имена авторов к единому формату в обеих таблицах
+
+6. С помощью функции join из пакета dplyr подтяните названия университетов в табилцу вида author1 author2 n_joint_publications year university1 university2
+
+7. Оформите ваш код в функцию get_bibliographical_data так, чтобы его можно было запустить командами
+
+```R
+source('your_file.R')
+x <- get_bibliographical_data(scholars)
+```
+
+Результатом выполнения этих команд должен быть исходный data.frame, присвоенный переменной x
+
+8. (задача со звездочкой) Исправьте функцию get_affiliation_info так, чтобы колонка affiliation не содержала должности исследователя
+
+3. Сдать код: https://goo.gl/forms/d8XBky4t45wvHzen2
+
 ## Рекомендации по выполнению Домашнего задания
 
 Если в процессе установки у вас возникли проблемы, не стесняйтесь спросить помощи у товарища (или у товарища семинариста)
