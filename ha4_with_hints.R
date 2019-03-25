@@ -3,22 +3,22 @@ library(dplyr)
 library(pbapply)
 
 scholars <- read.csv(url(paste0("https://raw.githubusercontent.com/",
-  "go95/practical_econometrics/master/google_scholar_ids.csv")), as.is = TRUE)$ids[1:20]
+  "go95/practical_econometrics/master/google_scholar_ids.csv")), as.is = TRUE)$ids[21:40]
 
 get_publications_author_pair <- function(scholars) {
-  # This function takes the list of scholar ids and creates a dataframe with
+  # This function takes the list of scholar ids and created a dataframe with
   # columns:
   #   author1 author2 pub_id and other publications info
   # unit of observation:
-  #   author pair (with the first author from scholars vector and their joint publication 
+  #   publication with an author pair
   
   publications <- data.frame()
   for (scholar in scholars) {
     print(scholar)
     new_publications <- get_publications(scholar)
-    Sys.sleep(1)
+    Sys.sleep(runif(1, 1, 2))
     new_publications$author1 <- get_profile(scholar)$name
-    Sys.sleep(1)
+    Sys.sleep(runif(1, 1, 2))
     publications <- rbind(publications, new_publications)
   }
   
@@ -43,7 +43,7 @@ get_affiliation_info <- function(scholars) {
 
   get_name_affiliation <- function(scholar_id) {
     profile <- get_profile(scholar_id)
-    Sys.sleep(1)
+    Sys.sleep(runif(1, 1, 2))
     name <- profile$name
     affiliation <- profile$affiliation
     return(data.frame(name=name, affiliation=affiliation))
@@ -59,7 +59,9 @@ get_affiliation_info <- function(scholars) {
 
 format_name <- function(name) {
   # The function formats scholars name to lowercase and initials
-  name <- strsplit(as.character(name), " ")[[1]]
-  name <- tolower(paste(substr(name[1],1,1), name[2]))
-  name
+  format_pair <- function(pair) {
+    return(tolower(paste(substr(pair[1],1,1), pair[2])))
+  }
+  name <- strsplit(as.character(name), " ")
+  return(unlist(lapply(name, format_pair)))
 }
