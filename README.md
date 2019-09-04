@@ -22,7 +22,7 @@ swirl()
 
 Из предложенных tutorials рекомендуется пройти:
 1. Basic Building Blocks (оценивается 1 балл)
-2. Workspace and Files (рекомендуется, но не оценивается)
+2. Workspace and Files (оценивается 1 балл)
 3. Sequences of Numbers (оценивается 1 балл)
 4. Vectors (рекомендуется, но не оценивается)
 5. Missing Values (оценивается 1 балл)
